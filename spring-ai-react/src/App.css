@@ -1,0 +1,250 @@
+/* Background styling */
+body {
+  background: url('https://www.transparenttextures.com/patterns/silver-scales.png'),
+    linear-gradient(to bottom, #ffffff, #dbe4f3);
+  background-blend-mode: overlay;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* App container */
+.App {
+  text-align: center;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 12px 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #e3eaf5;
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #8aa4d6;
+  color: white;
+}
+
+button.active {
+  background-color: #8aa4d6;
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 4px 6px rgba(138, 164, 214, 0.3);
+}
+
+/* Grouped Buttons */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Generator container */
+.generator-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Input field with spacing */
+input {
+  padding: 12px;
+  width: 80%;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-bottom: 10px; /* Add space between input and button */
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Placeholder images */
+.placeholder-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.placeholder-container img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px dashed #ccc;
+  display: none;
+}
+
+/* Show placeholders when needed */
+.show-placeholder .placeholder-container img {
+  display: block;
+}
+
+/* Chat Container */
+.chat-container {
+  text-align: center;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat Input */
+.chat-input {
+  width: 80%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Chat Button */
+.chat-button {
+  padding: 12px 20px;
+  background-color: #4a90e2;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.chat-button:hover {
+  background-color: #357ab8;
+}
+
+/* Chat Output */
+.chat-output {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f0f0f0;
+  border-left: 5px solid #4a90e2;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  text-align: left;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #ff7f00;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Circular Animation */
+.circle-animation {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ff7f00, #ff4500);
+  animation: pulse 2s infinite alternate;
+  transform: translateX(-50%);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1) translateX(-50%); opacity: 0.8; }
+  100% { transform: scale(1.2) translateX(-50%); opacity: 1; }
+}
+
+/* Disable button styling */
+button.disabled {
+  background-color: #ccc !important;
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+}
+
+/* Recipe Text */
+.recipe-text {
+  max-width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-y: auto;
+  font-size: calc(12px + 0.5vw);
+  line-height: 1.6;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+/* Image Grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.empty-image-slot {
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%;
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+/* Output Section */
+.output {
+  margin-top: 20px;
+  text-align: left;
+  background-color: #f4f4f4;
+  padding: 12px;
+  border-radius: 6px;
+  border-left: 4px solid #ff7f00; /* Subtle highlight */
+  font-size: 13px; /* Slightly smaller for a professional look */
+  font-weight: 500; /* Medium weight for readability */
+  line-height: 1.4; /* Optimized spacing */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+  overflow-wrap: break-word; /* Prevents text overflow */
+  font-family: "Arial", sans-serif; /* Clean, modern font */
+  color: #333; /* Darker text for contrast */
+}
+
+
