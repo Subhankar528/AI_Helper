@@ -12,7 +12,13 @@ Cuision is an AI-powered recipe generator built primarily using **Spring Boot** 
 - **Image Generation**: (Currently unavailable due to OpenAI API credit limitations) Generate food images based on AI-generated recipes.
 
 ## 📸 Screenshots
-*(Add relevant screenshots here)*
+![Screenshot](https://github.com/user-attachments/assets/f916c34b-b8a5-46ef-be76-11a64da2c2f4)
+![Screenshot](https://github.com/user-attachments/assets/a6b67329-8cb4-4ee9-9b0f-eed2b84c7908)
+![Screenshot](https://github.com/user-attachments/assets/781f5361-4e0b-4074-8b3e-f26adf3c9370)
+![Screenshot](https://github.com/user-attachments/assets/1d5ff0ac-7dea-421e-877f-c9199965eb43)
+![Screenshot](https://github.com/user-attachments/assets/3e556e71-79d8-4081-ae9d-1d8a3798681a)
+![Screenshot](https://github.com/user-attachments/assets/676c2c8b-fbb9-47df-87a9-6c4040696685)
+
 
 ## 🛠️ Technology Stack
 ### Backend (Core Focus):
